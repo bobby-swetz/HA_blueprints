@@ -98,7 +98,7 @@ action:
           - service: zwave_js.set_config_parameter
             data:
               parameter: !input "led_config_parameter"
-              value: "2"
+              value: "3"
             target:
               device_id: !input "scene_controller"
       - conditions:
@@ -109,7 +109,7 @@ action:
           - service: zwave_js.set_config_parameter
             data:
               parameter: !input "led_config_parameter"
-              value: "3"
+              value: "2"
             target:
               device_id: !input "scene_controller"
 
